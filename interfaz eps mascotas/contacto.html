@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - EPS de Mascotas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo EPS de Mascotas">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Dirección: Calle Falsa 123, Ciudad</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Email: contacto@epsmascotas.com</p>
+            <form action="/enviar" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <a href="index.html" class="button">Regresar a Inicio</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 EPS de Mascotas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
